@@ -1,0 +1,44 @@
+@media (min-width: 576px){
+	main{ max-width: 540px;}
+	nav{max-width: 540px;}
+}
+@media (min-width: 768px){
+	main{ max-width: 720px; }
+	nav{ max-width: 720px;}
+}
+@media (min-width: 992px){
+	main{ max-width: 960px; }
+	nav{ max-width: 960px;}
+}
+@media (min-width: 1200px){
+	main{ max-width: 1140px; }
+	nav{ max-width: 1140px;}
+}
+
+main {
+	width: 100%;
+	padding: 20px 15px 20px 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+header{
+	width: 100%;
+	background-color: #1E3972;
+	margin: -8px auto -8px -8px;
+	padding-left: 16px ;
+}
+nav {
+	width: 100%;
+	padding: 20px 15px 20px 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+body{
+	background-color: #FBFBFB;
+}
+h1{
+	color: white;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
