@@ -5,19 +5,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Симулятор жизни</title>
 	<link rel="stylesheet" type="text/css" href="styles/main.css"></link>
+	<link rel="stylesheet" type="text/css" href="styles/btnstyles.css"></link>
 </head>
-<body>
+<body style="font-family: Verdana;">
 <header>
 	<nav>
 		<h1>Симулятор жизни</h1>
+		<a class="navbtn" href="regform.html">Login</a>
 	</nav>
 </header>
 <main>
-	<div id="game-area">
-
+	<div id="areabtn" class="areabtn">
+		<div class="areabtnin" style="align-items: center;">
+			<a id="createbtn" onclick="document.getElementById('create-people').style.display = 'block'; document.getElementById('areabtn').style.display = 'none'; ">Создать персонажа</a>
+		</div>
+		<div >
+			<h2 style="color: black;">Список персонажей</h2> 
+			<div>
+				<div>
+					
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<div id="create-people" style="display: none;">
+		<h2 style="color: black;">Создание героя</h2>
+		<form>
+			<div class="createform">
+				<label>Придумайте:</label>
+				<label for="name"> Имя героя</label>
+				<input type="name" name="name">
+				<label for="name"> Фамилию героя</label>
+				<input type="name" name="name">
+			</div>
+		</form>
+	</div>
+
+	<div id="game-container" style="display: none;">
+        <div id="status">
+            <p>Имя: <span id="name">Персонаж</span></p>
+            <p>Энергия: <span id="energy">100</span></p>
+        </div>
+        <button id="work-button">Работать</button>
+        <button id="rest-button">Отдохнуть</button>
+        <div id="log"></div>
+    </div>
 </main>
-<script src="scripts/script.js"></script>
+  <script src="scripts/script.js"></script>
 <footer>
 	
 </footer>
