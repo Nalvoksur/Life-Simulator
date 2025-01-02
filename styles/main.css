@@ -16,6 +16,7 @@
 }
 a{
 	text-decoration: none;
+	cursor: pointer;
 }
 main {
 	width: 100%;
@@ -94,4 +95,34 @@ input{
 	margin: auto;
 	width: 30%;
 	display: flex;
+}
+.char{
+	color: white;
+	padding: 15px 20px;
+	background-color: gray;
+	width: 50%;
+	display: inline-flex;
+	justify-content: space-between;
+	border: 1px solid gray;
+	border-radius: 15px;
+	margin: 10px 250px;
+	display: none;
+}
+.charbox{
+	justify-content: center;
+}
+.charlevel{
+	margin: auto 0px;
+	margin-right: 25px;
+	justify-content: center;
+	justify-items: center;
+
+}
+.charlevelcur{
+	border-radius: 100px;
+	 border: 1px solid black;
+	 display: flex;
+	 justify-content:  center;
+	padding: 20px 20px;
+	width: 40%;
 }

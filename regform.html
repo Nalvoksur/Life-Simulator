@@ -31,26 +31,27 @@
             <input type="password" id="confirm-password" name="confirm-password" required>
         </div>
         
-        <button type="submit" class="submit-button">Зарегистрироваться</button>
     </form>
+     	<button class="submit-button" onclick="reg()">Зарегистрироваться</button>
     <p>Уже есть аккаунт? <a href="/login"onclick="document.getElementById('login').style.display = 'block'; document.getElementById('reg').style.display = 'none';">Войти</a></p>
 </div>
 <div class="registration-form" id="login" style="display: none;">
 	<h2>Вход</h2>
 	<form>
 		<div class="form-group">
-			<label for="email">Электронная почта</label>
-			<input type="email" id="email" name="email" required>
+			<label for="login">Логин</label>
+			<input type="login" id="inputlogin" name="login" required>
 		</div>
 		<div class="form-group">
 			<label for="password">Пароль</label>
-			<input type="password" id="password" name="password" required>
+			<input type="password" id="inputpassword" name="password" required>
 		</div>
 
-		<button type="submit" class="submit-button">Войти</button>
 	</form>		
+	<button class="submit-button" onclick="enter()">Войти</button>
 	<p>У вас нет аккаунта? <a href="/reg" onclick="document.getElementById('login').style.display = 'none'; document.getElementById('reg').style.display = 'block';"> Зарегистрироваться</a></p>
 </div>
 </main>
+<script type="text/javascript" src="scripts/Reg.js"></script>
 </body>
 </html>

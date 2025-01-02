@@ -9,9 +9,9 @@
 </head>
 <body style="font-family: Verdana;">
 <header>
-	<nav>
-		<h1>Симулятор жизни</h1>
-		<a class="navbtn" href="regform.html">Login</a>
+	<nav style="display: flex; justify-content: center;">
+		<h1 style="margin: auto;">Симулятор жизни</h1>
+		<a class="navbtn" id = "Lgn" href="regform.html">Login</a>
 	</nav>
 </header>
 <main>
@@ -19,27 +19,54 @@
 		<div class="areabtnin" style="align-items: center;">
 			<a id="createbtn" onclick="document.getElementById('create-people').style.display = 'block'; document.getElementById('areabtn').style.display = 'none'; ">Создать персонажа</a>
 		</div>
-		<div >
+		<div>
 			<h2 style="color: black;">Список персонажей</h2> 
-			<div>
-				<div>
-					
-				</div>
-			</div>
+			<content class="charbox" id="charbox">
+					<a><div class="char" id="pers1">
+							<div style = " width: 10%;">
+								<image src = "images/AvatarProfileIcon.png"></image>
+							</div>
+							<div>
+								<h4 id="name1">ФИО: </h4>
+								<h4 id="balance1">Баланс: </h4>
+							</div>
+							<div class="charlevel">
+								<div class="charlevelcur"> 1 </div>
+							</div>
+					</div></a>
+					<a><div class="char" id="pers2">
+							<div style = " width: 10%;">
+								<image src = "images/AvatarProfileIcon.png"></image>
+							</div>
+							<div>
+								<h4>Имя: </h4>
+								<h4>Баланс: </h4>
+							</div>
+							<div class="charlevel">
+								<div class="charlevelcur"> 1 </div>
+							</div>
+					</div></a>	
+			</content>
 		</div>
 	</div>
-
 	<div id="create-people" style="display: none;">
 		<h2 style="color: black;">Создание героя</h2>
 		<form>
-			<div class="createform">
-				<label>Придумайте:</label>
-				<label for="name"> Имя героя</label>
-				<input type="name" name="name">
-				<label for="name"> Фамилию героя</label>
-				<input type="name" name="name">
+			<div class="createform" style="text-align: ;">
+				<label>Придумайте:</label> <br>
+				<label for="name"> Имя</label>
+				<input type="name" name="name" id="name">
+				<label for="name"> Фамилию</label>
+				<input type="name" name="surname" id="surname">
+				<label for="name"> Отчество</label>
+				<input type="name" name="Oname" id="otch"> 
+				<label for="name"> Возраст</label>
+				<input type="name" name="age" id="age">
+			</div>
+			<div align="center"> 
 			</div>
 		</form>
+		<button id="createbtn" style="margin: 15px 40px" onclick="create()">Продолжить</button>
 	</div>
 
 	<div id="game-container" style="display: none;">
@@ -53,6 +80,7 @@
     </div>
 </main>
   <script src="scripts/script.js"></script>
+  <script type="text/javascript" src="scripts/Player.js"></script>
 <footer>
 	
 </footer>
